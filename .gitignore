@@ -34,3 +34,7 @@ test-results/
 *.swo
 .DS_Store
 Thumbs.db
+
+# Downloaded Onyx credentials (schema under api/ stays tracked)
+**/onyx-database*.json
+config/

@@ -56,3 +56,9 @@ Commit the source, configuration, template metadata, and `package-lock.json`.
 files, local environment files, credentials, logs, caches, and editor state.
 Next.js regenerates `next-env.d.ts` when you run dev or build. A sanitized
 `.env.example` may be committed if configuration is added later.
+
+## Onyx Database SDK
+
+The official SDK and typed one-table Task CRUD example are included. See
+[Onyx setup and example](docs/onyx.md) for downloaded configuration, explicit
+schema commands, CLI CRUD, and authorization boundaries. UI startup needs no credentials.

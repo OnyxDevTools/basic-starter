@@ -3,6 +3,7 @@ const nextConfig = {
   agentRules: false,
   devIndicators: false,
   poweredByHeader: false,
+  serverExternalPackages: ["@onyx.dev/onyx-database"],
 };
 
 export default nextConfig;

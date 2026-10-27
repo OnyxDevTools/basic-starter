@@ -7,13 +7,20 @@
     "build": "next build",
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
-    "check": "npm run build && npm run typecheck",
-    "template:init": "node scripts/init-template.mjs"
+    "check": "npm run test:onyx && npm run schema:validate && npm run build && npm run typecheck",
+    "template:init": "node scripts/init-template.mjs",
+    "onyx:tasks": "node --conditions=react-server --experimental-strip-types scripts/tasks.ts",
+    "schema:validate": "node --experimental-strip-types scripts/schema.ts validate",
+    "schema:diff": "node --experimental-strip-types scripts/schema.ts diff",
+    "schema:publish": "node --experimental-strip-types scripts/schema.ts publish",
+    "test:onyx": "node --conditions=react-server --experimental-strip-types --test scripts/onyx.test.ts"
   },
   "dependencies": {
+    "@onyx.dev/onyx-database": "2.8.4",
     "next": "16.4.3",
     "react": "19.3.1",
-    "react-dom": "19.3.1"
+    "react-dom": "19.3.1",
+    "server-only": "0.0.1"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

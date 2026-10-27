@@ -1,0 +1,33 @@
+{
+  "tables": [
+    {
+      "name": "Task",
+      "type": "DEFAULT",
+      "identifier": {
+        "name": "id",
+        "type": "String",
+        "generator": "None"
+      },
+      "attributes": [
+        {
+          "name": "id",
+          "type": "String",
+          "isNullable": false
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "isNullable": false
+        },
+        {
+          "name": "completed",
+          "type": "Boolean",
+          "isNullable": false
+        }
+      ],
+      "indexes": [],
+      "resolvers": [],
+      "triggers": []
+    }
+  ]
+}

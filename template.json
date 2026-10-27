@@ -3,12 +3,7 @@
   "id": "basic-starter",
   "name": "Basic Starter",
   "description": "Minimal unthemed Next.js app with a centered clean slate and development hot reload.",
-  "tags": [
-    "nextjs",
-    "typescript",
-    "minimal",
-    "blank"
-  ],
+  "tags": ["nextjs", "typescript", "minimal", "blank"],
   "useWhen": [
     "A prompt needs a blank Next.js starting point with minimal dependencies"
   ],
@@ -18,15 +13,10 @@
   "capabilities": [
     "Minimal App Router page",
     "Turbopack development and Fast Refresh",
-    "Preview readiness endpoint"
+    "Preview readiness endpoint",
+    "Server-only Onyx SDK and typed Task CRUD example"
   ],
-  "notIncluded": [
-    "Theme",
-    "UI library",
-    "Authentication",
-    "Database",
-    "Hosting adapter"
-  ],
+  "notIncluded": ["Theme", "UI library", "Authentication", "Hosting adapter"],
   "examplePrompt": "Build a simple app from a clean slate.",
   "preview": {
     "route": "/"
@@ -38,7 +28,8 @@
     "build": "npm run build",
     "start": "npm run start -- --port <assigned-port>",
     "healthPath": "/api/health",
-    "requiredEnvironment": []
+    "requiredEnvironment": [],
+    "readinessPath": "/api/ready"
   },
   "initialize": "npm run template:init -- --name <project-name> --slug <project-slug>",
   "instructions": "README.md"
