@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  font-size: 3rem;
+  min-height: 100svh;
+  place-items: center;
+}

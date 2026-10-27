@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Next.js and build output
+.next/
+out/
+build/
+dist/
+
+# Generated TypeScript files
+next-env.d.ts
+*.tsbuildinfo
+
+# Local environment and credentials
+.env*
+!.env.example
+.npmrc
+*.pem
+*.key
+
+# Logs and test output
+*.log
+coverage/
+playwright-report/
+test-results/
+
+# Local caches, editors, and OS files
+.cache/
+.turbo/
+.vercel/
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
